@@ -73,6 +73,10 @@ public abstract class IOSNotification extends UmengNotification {
         return true;
     }
     
+    public void setAlert(JSONObject token) throws Exception {
+        setPredefinedKeyValue("alert", token);
+    }
+    
     public void setAlert(String token) throws Exception {
         setPredefinedKeyValue("alert", token);
     }
